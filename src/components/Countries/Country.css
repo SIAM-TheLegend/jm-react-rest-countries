@@ -1,0 +1,9 @@
+.country {
+  border: 2px solid darkcyan;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
