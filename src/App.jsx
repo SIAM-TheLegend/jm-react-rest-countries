@@ -1,7 +1,11 @@
-import "./App.css";
+import Countries from "./components/Countries/Countries";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Countries />
+    </>
+  );
 }
 
 export default App;
