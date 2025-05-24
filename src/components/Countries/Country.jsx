@@ -10,7 +10,7 @@ const Country = ({ country }) => {
 
   // console.log(country);
   return (
-    <div className="country">
+    <div style={{ background: `${visited ? "grey" : "transparent"}` }} className="country">
       <div>
         <p>
           Name: <b style={{ fontSize: "20px" }}>{name.common}</b>
