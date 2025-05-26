@@ -14,7 +14,6 @@ const Countries = () => {
   const handleVisitedCountries = (country) => {
     const newlyVisitedCountries = [...visitedCountries, country];
     setVisitedCountries(newlyVisitedCountries);
-    console.log(visitedCountries);
   };
 
   return (
@@ -28,7 +27,7 @@ const Countries = () => {
       <div style={{ width: "40%" }}>
         <h2 style={{ textAlign: "center" }}>Visited Country: {visitedCountries.length}</h2>
         {visitedCountries.map((visitedCountry) => (
-          <li>{visitedCountry.name.common}</li>
+          <li key={visitedCountry.name.common}>{visitedCountry.name.common}</li>
         ))}
       </div>
     </div>
